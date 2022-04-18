@@ -35,7 +35,7 @@ export default function Table() {
   };
 
   return (
-    <div className="Table">
+    <div className="Table" align="center">
       <div className="topFilter">
         Sort By:
         <select onChange={onSortChange}>
@@ -55,7 +55,7 @@ export default function Table() {
           placeholder="Search by Country Name"
           onChange={onSearchChange}
         ></input>
-        <button onClick={onSubmit}>Search!!</button>
+        <button onClick={onSubmit}>Search</button>
       </div>
       <table>
         <tr>
