@@ -5,7 +5,7 @@ Clone this repo,
 ```
 git clone https://github.com/harshit2508/country-data-application.git
 ```
-Then enter the server directory of the repo:
+Then enter the client directory of the repo:
 ```
 cd frontend 
 ```
