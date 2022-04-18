@@ -3,7 +3,7 @@ An app based on NodeJS which contains data like country name and corresponding c
 
 Clone this repo,
 ```
-git clone https://github.com/harshit2508/country-data-app.git 
+git clone https://github.com/harshit2508/country-data-application.git
 ```
 Then enter the directory of the repo:
 ```
