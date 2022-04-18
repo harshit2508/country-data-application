@@ -1,5 +1,5 @@
 # country-data-application
-An app based on NodeJS which contains data like country name and corresponding capital and timezone
+An fullstack app based on NodeJS and ReactJS which contains data like country name and corresponding capital and timezone
 
 Clone this repo,
 ```
