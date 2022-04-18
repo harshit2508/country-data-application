@@ -16,7 +16,7 @@ export default function Table() {
         `http://localhost:8080/country?page=${pageNo}&searchString=${searchString}&columnName=${sortBy}&order=${orderBy}&listPerPage=${limit}`
       )
       .then((res) => setResponse(res.data));
-  }, [pageNo, limit, sortBy, orderBy, searchString]);
+  }, [pageNo, limit, sortBy, orderBy]);
   const data = response.data ?? [];
 
   const onLimitChange = (e) => setLimit(e.target.value);
