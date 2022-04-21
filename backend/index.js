@@ -23,6 +23,8 @@ app.get("/hi", (req, res) => {
   //http://localhost:8080/country?page=2&searchString=4&columnName=CAPITAL&order=DESC&listPerPage=5
 app.use("/", countryDataRouter)
 
+app.use(express.static(path.join(__dirname + "/public")))
+
 app.use((e, req, res, next) => {
     const statusCode = e.statusCode || 500
     console.error(e.message, e.stack)

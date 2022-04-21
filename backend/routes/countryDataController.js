@@ -4,12 +4,13 @@ const countryDataService = require('../services/countryDataService')
 
 router.get('/country', async function(req, res, next) {
     try{
+        const page = req.query.page
         const searchString = req.query.searchString;
         const columnName = req.query.columnName;
         const order = req.query.order;
         const listPerPage = req.query.listPerPage;
 
-        res.json(await countryDataService.getCountries(req.query.page, searchString, columnName, order, listPerPage))
+        res.json(await countryDataService.getCountries(page, searchString, columnName, order, listPerPage))
     }
     catch(e){
         console.error("Error while fetching countries", e.message);
